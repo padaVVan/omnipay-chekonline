@@ -1,0 +1,27 @@
+{
+    "name": "padavvan/omnipay-chekonline",
+    "description": "ChekOnline api client",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "chekonline",
+        "rest",
+        "api"
+    ],
+    "authors": [
+        {
+            "name": "Oleg Koltsov",
+            "email": "lil-oleg@ya.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "omnipay/common": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Chekonline\\": "src"
+        }
+    }
+}
