@@ -131,7 +131,7 @@ class Item implements ItemInterface
             'Qty' => $this->getQuantity(),
             'TaxId' => $this->getTax(),
             'Price' => $this->getPrice(),
-            'PayAttribute' => 4
+            'PayAttribute' => 4,
         ];
     }
 
@@ -154,7 +154,7 @@ class Item implements ItemInterface
 
     /**
      * @param  string $key
-     * @param  mixed  $value
+     * @param  mixed $value
      * @return $this
      */
     public function setParameter($key, $value)

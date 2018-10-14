@@ -17,6 +17,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
+        "ext-json": "*",
         "omnipay/common": "^3.0"
     },
     "autoload": {

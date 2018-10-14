@@ -2,8 +2,8 @@
 
 namespace Omnipay\Chekonline;
 
-use Omnipay\Common\AbstractGateway;
 use Omnipay\Chekonline\Message\ComplexRequest;
+use Omnipay\Common\AbstractGateway;
 
 /**
  * Class Gateway

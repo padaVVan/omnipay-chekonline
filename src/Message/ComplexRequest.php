@@ -3,8 +3,8 @@
 namespace Omnipay\Chekonline\Message;
 
 use Money\Money;
-use Omnipay\Common\ItemBag;
 use Omnipay\Chekonline\ItemInterface;
+use Omnipay\Common\ItemBag;
 
 /**
  * Class ComplexRequest
@@ -49,19 +49,15 @@ class ComplexRequest extends AbstractRequest
      */
     public function getData()
     {
-//        $this->validate(...$this->requiredFields);
+        $this->validate(...$this->requiredFields);
 
-        return array_merge(
-            [],
-//            $this->getAuthData(),
-            [
-                'Device' => $this->getDevice(),
-                'RequestId' => $this->getRequestId(),
-                'DocumentType' => $this->getDocumentType(),
-                'Lines' => $this->getLinesAsArray(),
-                'NonCash' => $this->getNonCash(),
-            ]
-        );
+        return [
+            'Device' => $this->getDevice(),
+            'RequestId' => $this->getRequestId(),
+            'DocumentType' => $this->getDocumentType(),
+            'Lines' => $this->getLinesAsArray(),
+            'NonCash' => $this->getNonCash(),
+        ];
     }
 
     /**
